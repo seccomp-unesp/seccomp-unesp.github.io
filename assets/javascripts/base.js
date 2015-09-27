@@ -10,11 +10,21 @@ $(function () {
   $(aCurrentSchedule).fadeIn();
 
 // menu
-  var gMainMenu       = $('ul.menu');
+  var gNav          = $('.main-nav'),
+      gMobileStripe = $('.menu-stripe'),
+      gMobileMenu   = $('.mobile-menu');
 
-  gMainMenu.on('click', 'li', function(e){
+  gNav.on('click', 'li', function(e){
     e.preventDefault();
     $('html,body').scrollTo($(this).find('a').attr('href'), 500);
+  });
+
+  gMobileMenu.on('click', function(){
+    $(this).fadeToggle();
+  });
+
+  gMobileStripe.on('click', function(){
+    gMobileMenu.fadeToggle();
   });
 
 });

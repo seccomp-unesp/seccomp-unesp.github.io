@@ -44,7 +44,7 @@ a:focus {
 
 header {
   width: 100%;
-  height: 70px;
+  height: 60px;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -53,28 +53,37 @@ header {
 
 .main-nav {
   width: 960px;
-  height: 50px;
+  height: 40px;
   margin: 10px auto;
 }
 
 .main-nav .menu {
+  display: block;
   float: right;
   margin-top: 14px;
+}
+
+.main-nav .mobile-menu {
+  display: none;
 }
 
 .main-nav .logo {
   float: left;
 }
 
-.main-nav .menu a.active {
-  color: red;
-}
-
+.main-nav .mobile-menu a,
 .main-nav .menu a {
   color: #fff;
 }
 
-.main-nav .menu li {
+.main-nav .mobile-menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main-nav .menu li,
+.main-nav .mobile-menu li {
   font-size: 16px;
   color: #FFFFFF;
   line-height: 22px;
@@ -116,7 +125,7 @@ section .inner-section {
 }
 
 /* section headers */
-
+/*.mobile-menu*/
 #schedule h2 {
   background-image: url('../images/schedule-icon.png');
 }
@@ -131,6 +140,10 @@ section .inner-section {
 
 #organizers h2 {
   background-image: url('../images/organizers-icon.png');
+}
+
+#suporters h2 {
+  background-image: url('../images/suport-icon.png');
 }
 
 #contact h2 {
@@ -362,6 +375,22 @@ section .inner-section {
   display: block;
 }
 
+/* suporters */
+
+#suporters li {
+  width: 33%;
+  text-align: center;
+  float: left;
+}
+
+#suporters li img {
+  width: 75%;
+  height: auto;
+}
+
+#suporters li:last-child img {
+  margin-top: 15px;
+}
 
 /* contact section */
 
