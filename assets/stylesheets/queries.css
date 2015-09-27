@@ -7,11 +7,18 @@
   .main-nav .menu-stripe {
     display: block;
     float: right;
-    margin-right: 15px;
+    margin-top: 10px;
     height: 30px;
     width: 30px;
+  }
+
+  .main-nav .menu-stripe .stripe {
+    display: block;
+    height: 4px;
+    width: 24px;
+    margin: 3px auto;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 5px;
   }
 
   .main-nav .mobile-menu {
