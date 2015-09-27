@@ -31,10 +31,9 @@ $(function () {
 
   });
 
-
-function toggleActive(pObject){
-  $(pObject).siblings().removeClass('active');
-  $(pObject).addClass('active')
-}
+  function toggleActive(pObject){
+    $(pObject).siblings().removeClass('active');
+    $(pObject).addClass('active')
+  }
 
 })
