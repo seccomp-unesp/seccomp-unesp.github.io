@@ -1,17 +1,16 @@
 "use strict"
 
 $(function () {
-  var aDate = new Date,
-      aDay  = (aDate.getDay() > 5) ? 0 : aDate.getDay(),
-      aCurrentSchedule = $('#schedule')
-                          .find('[data-schedule]')[aDay];
+  var aDay        = (new Date).getDay(),
+      aCurrentTab = (aDay > 0 && aDay < 6) ? (aDay-1) : 0,
+      aActiveTab  = $('ul.schedule-days li')[aCurrentTab],
+      aCurrentSchedule = $('#schedule').find('[data-schedule]')[aCurrentTab];
 
+  $(aActiveTab).addClass('active');
   $(aCurrentSchedule).fadeIn();
 
-
 // menu
-  var gMainMenu = $('ul.menu');
-
+  var gMainMenu       = $('ul.menu');
 
   gMainMenu.on('click', 'li', function(e){
     e.preventDefault();

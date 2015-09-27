@@ -66,6 +66,10 @@ header {
   float: left;
 }
 
+.main-nav .menu a.active {
+  color: red;
+}
+
 .main-nav .menu a {
   color: #fff;
 }
