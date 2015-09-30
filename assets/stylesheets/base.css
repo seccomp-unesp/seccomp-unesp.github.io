@@ -285,6 +285,10 @@ section .inner-section {
   line-height: 18px;
 }
 
+.schedule-content .schedule-info .speaker {
+  font-style: italic;
+}
+
 /* location section */
 
 #location {
@@ -378,7 +382,7 @@ section .inner-section {
 /* suporters */
 
 #suporters li {
-  width: 33%;
+  width: 25%;
   text-align: center;
   float: left;
 }
@@ -386,10 +390,6 @@ section .inner-section {
 #suporters li img {
   width: 75%;
   height: auto;
-}
-
-#suporters li:last-child img {
-  margin-top: 15px;
 }
 
 /* contact section */
