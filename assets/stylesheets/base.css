@@ -285,6 +285,10 @@ section .inner-section {
   line-height: 18px;
 }
 
+.schedule-content .schedule-info .speaker {
+  font-style: italic;
+}
+
 /* location section */
 
 #location {
