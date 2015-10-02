@@ -289,6 +289,16 @@ section .inner-section {
   font-style: italic;
 }
 
+.short.description {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.description a {
+  color: #0E0E10;
+}
+
 /* location section */
 
 #location {
@@ -339,7 +349,7 @@ section .inner-section {
 
 /* enrollment section */
 
-#enrollment .description {
+.description {
   font-size: 14px;
   color: #8F8F8F;
   line-height: 22px;
@@ -356,7 +366,6 @@ section .inner-section {
   color: #FFFFFF;
   line-height: 43px;
 }
-
 
 /* organizers section */
 
