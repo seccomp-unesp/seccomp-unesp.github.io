@@ -1,0 +1,456 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #0E0E10;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5 { font-weight: 300; }
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #8F8F8F;
+}
+
+.none {
+  display: none;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #0E0E10;
+}
+
+.main-nav {
+  width: 960px;
+  height: 40px;
+  margin: 10px auto;
+}
+
+.main-nav .menu {
+  display: block;
+  float: right;
+  margin-top: 14px;
+}
+
+.main-nav .mobile-menu {
+  display: none;
+}
+
+.main-nav .logo {
+  float: left;
+}
+
+.main-nav .mobile-menu a,
+.main-nav .menu a {
+  color: #fff;
+}
+
+.main-nav .mobile-menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main-nav .menu li,
+.main-nav .mobile-menu li {
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 22px;
+  float: left;
+  margin-right: 30px;
+}
+
+.main-nav .menu li:last-child {
+  margin-right: 0px;
+}
+
+/* section defaults */
+
+section {
+  width: 960px;
+  margin: 130px auto 0px auto;
+}
+
+section.full-section {
+  width: 100%;
+  background-position: center top;
+  background-size: cover;
+}
+
+section h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #0E0E10;
+  line-height: 43px;
+  padding-left: 50px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+section .inner-section {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* section headers */
+/*.mobile-menu*/
+#schedule h2 {
+  background-image: url('../images/schedule-icon.png');
+}
+
+#location h2 {
+  background-image: url('../images/location-icon.png');
+}
+
+#enrollment h2 {
+  background-image: url('../images/enrollment-icon.png');
+}
+
+#organizers h2 {
+  background-image: url('../images/organizers-icon.png');
+}
+
+#suporters h2 {
+  background-image: url('../images/suport-icon.png');
+}
+
+#contact h2 {
+  background-image: url('../images/contact-icon.png');
+}
+
+/* call section */
+
+#call {
+  background-image: url('../images/background-call.png');
+  height: 500px;
+  padding-top: 90px;
+  margin-top: 0px;
+}
+
+#call .call-info {
+  font-size: 48px;
+  color: #FFFFFF;
+  margin: 120px auto;
+  text-align: right;
+}
+
+#call .call-info .call-subtitle {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+/* schedule section */
+
+#schedule .schedule-filter,
+#schedule .schedule-days {
+  width: 100%;
+  display: inline-block;
+  border-bottom: solid 1px #8F8F8F;
+  text-align: center;
+}
+
+#schedule .schedule-days li {
+  font-size: 16px;
+  color: #8F8F8F;
+  line-height: 22px;
+  width: 20%;
+  float: left;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+#schedule .schedule-days li.active,
+#schedule .schedule-days li:hover {
+  background-color: #DC2025;
+  color: #fff;
+}
+
+#schedule .schedule-days li:hover .day,
+#schedule .schedule-days li.active .day {
+  color: #fff;
+  font-weight: 600;
+}
+
+#schedule .schedule-days .day {
+  font-size: 22px;
+  color: #DC2025;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+#schedule .schedule-filter {
+  border: none;
+}
+
+#schedule .schedule-filter li {
+  width: 30%;
+  margin: 20px 1.66666%;
+  float: left;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  background-color: #E3E3E3;
+}
+
+#schedule .schedule-filter li.active,
+#schedule .schedule-filter li:hover {
+  background-color: #DC2025;
+  color: #fff;
+}
+
+.schedule-content .schedule-item {
+  width: 100%;
+  display: inline-block;
+  margin: 25px 0px;
+}
+
+.schedule-content .break-item {
+  border-top: solid 1px #E3E3E3;
+  border-bottom: solid 1px #E3E3E3;
+  padding: 25px 0px;
+  margin: 5px 0px;
+}
+
+.schedule-content .schedule-item .schedule-time,
+.schedule-content .schedule-item .schedule-info {
+  float: left;
+}
+
+.schedule-content .schedule-item .schedule-time {
+  width: 25%;
+}
+
+.schedule-content .schedule-item .schedule-info {
+  width: 75%;
+}
+
+.schedule-content .schedule-item span {
+  display: block;
+}
+
+.schedule-content .schedule-item .time {
+  font-size: 18px;
+  color: #DC2025;
+  line-height: 24px;
+}
+
+.schedule-content .schedule-item .place {
+  font-size: 14px;
+  color: #8F8F8F;
+  line-height: 19px;
+}
+
+.schedule-content .schedule-info .schedule-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0E0E10;
+  line-height: 22px;
+}
+
+.schedule-content .schedule-info .schedule-speaker {
+  font-size: 13px;
+  color: #8F8F8F;
+  line-height: 18px;
+}
+
+.schedule-content .schedule-info .speaker {
+  font-style: italic;
+}
+
+/* location section */
+
+#location {
+  background-image: url('../images/background-location.png');
+  display: inline-block;
+}
+
+#location .address-container {
+  background-color: #fff;
+  padding: 10px 15px;
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+
+#location address {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #8F8F8F;
+  line-height: 40px;
+}
+
+#location .information {
+  margin-top: 60px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 22px;
+}
+
+#location .location-bullet {
+  padding-left: 80px;
+  margin: 70px 0px 0px 140px;
+  font-size: 38px;
+  color: #FFFFFF;
+  line-height: 65px;
+  float: left;
+  background-image: url('../images/red-location-icon.png');
+  background-position: 15px center;
+  background-repeat: no-repeat;
+
+}
+
+#location .location-bullet .info {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* enrollment section */
+
+#enrollment .description {
+  font-size: 14px;
+  color: #8F8F8F;
+  line-height: 22px;
+}
+
+#enrollment .call-btn {
+  padding: 25px;
+  margin: 60px auto 0px auto;
+  width: 70%;
+  display: block;
+  text-align: center;
+  background-color: #DC2025;
+  font-size: 32px;
+  color: #FFFFFF;
+  line-height: 43px;
+}
+
+
+/* organizers section */
+
+#organizers .organizers-list {
+  text-align: center;
+  display: inline-block;
+}
+
+#organizers .organizers-list li {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#organizers .organizers-list .role {
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+}
+
+/* suporters */
+
+#suporters li {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+
+#suporters li img {
+  width: 75%;
+  height: auto;
+}
+
+/* contact section */
+
+#contact {
+  background-color: #E3E3E3;
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+#contact .president {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+#contact .president .role {
+  font-size: 14px;
+  color: #8F8F8F;
+  font-weight: 300;
+}
+
+#contact .contact-col {
+  font-size: 16px;
+  font-weight: 400;
+  width: 40%;
+  margin: 0px 5%;
+  float: left;
+  text-align: center;
+}
+
+#contact .contact-col li {
+  width: 50%;
+  float: left;
+  min-height: 34px;
+}
+
+#contact .contact-col span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8F8F8F;
+  margin-right: 10px;
+}
+
+#contact .social-media {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 5px;
+}
+
+#contact .social-media a {
+ height: 32px;
+  width: 32px;
+  display: inline-block;
+}
+
+#contact .facebook a {
+  background: url('../images/facebook-icon.png') center no-repeat;
+}
+
+#contact .twitter a {
+  background: url('../images/twitter-icon.png') center no-repeat;
+}
