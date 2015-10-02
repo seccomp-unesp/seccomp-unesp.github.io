@@ -349,7 +349,7 @@ section .inner-section {
 
 /* enrollment section */
 
-#enrollment .description {
+.description {
   font-size: 14px;
   color: #8F8F8F;
   line-height: 22px;
@@ -366,7 +366,6 @@ section .inner-section {
   color: #FFFFFF;
   line-height: 43px;
 }
-
 
 /* organizers section */
 
