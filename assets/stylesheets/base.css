@@ -289,6 +289,16 @@ section .inner-section {
   font-style: italic;
 }
 
+.short.description {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.description a {
+  color: #0E0E10;
+}
+
 /* location section */
 
 #location {
